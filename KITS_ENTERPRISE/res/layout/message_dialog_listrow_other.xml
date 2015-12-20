@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/msg_dialog_listrow_layout"
+    android:orientation="vertical" >
+    
+    <TextView
+		android:id="@+id/date_label_other"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="6dp"
+		android:layout_marginBottom="2dp"
+		android:layout_gravity="center"
+		android:background="@drawable/message_date_shape"
+		android:padding="5dip"
+		android:text="星期二"
+		android:textColor="#FFFFFF"
+		android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/msg_dialog_single_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/msg_dialog_bighead"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/contact_head_big" />
+
+        <LinearLayout
+            android:id="@+id/msg_name_and_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/single_message_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:maxWidth="200dp"
+                android:text="彭一珍"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/single_message_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/message_single_shape"
+                android:maxWidth="200dp"
+                android:padding="10dip"
+                android:text="這裡是說話的地方這裡是說話的地方這裡是說話的地方這裡是說話的地方"
+                android:textSize="15sp" />
+            
+            <ImageView
+                android:id="@+id/single_message_iv_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/message_single_shape"
+                android:maxWidth="220dp"
+                android:visibility="gone" />
+            
+            <FrameLayout
+		        android:id="@+id/single_message_vv_other_frame"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:visibility="gone" >
+		        
+			    <ImageView
+			        android:id="@+id/single_message_vv_other"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="right|bottom"
+			        android:maxWidth="110dp" />
+			    
+			    <Button
+			        android:id="@+id/video_play_other"
+			        android:layout_width="50dp"
+			        android:layout_height="50dp"
+			        android:layout_gravity="center"
+			        android:background="@drawable/video_play" />
+	        
+	    	</FrameLayout>
+	    
+            
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/single_msg_time_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="3dp"
+            android:layout_gravity="bottom"
+            android:text="15:30"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+ 
+    <LinearLayout
+      android:id="@+id/itemLayout"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:orientation="vertical"
+      android:layout_marginTop="0dp"
+      android:background="@drawable/drawer_item"
+     >
+ 
+              <LinearLayout
+ 
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:minHeight="30dp"
+                 >
+ 
+                  <ImageView
+                      android:id="@+id/drawer_icon"
+                      android:layout_width="0dp"
+                      android:layout_height="fill_parent"
+                      android:layout_weight="1"
+                      android:scaleType="center"
+                      android:src="@drawable/ic_main_home"
+                      />
+ 
+                  <TextView
+                      android:id="@+id/drawer_itemName"
+                      android:layout_width="0dp"
+                      android:layout_height="fill_parent"
+                      android:layout_weight="4"
+                      android:textColor="@color/elite_theme_color_font_white"
+                      android:textAppearance="?android:attr/textAppearanceLarge"
+ 					  android:text="功能選單"
+                       />
+              </LinearLayout>
+ 
+               <View
+			      android:layout_width="match_parent"
+			      android:layout_height="1dp"
+			      android:layout_marginBottom="1dp"
+			      android:layout_marginTop="1dp"
+			      android:layout_marginLeft="10dp"
+			      android:layout_marginRight="10dp"
+			      android:background="@color/elite_theme_color_line"
+ 
+       			></View>
+ 
+    </LinearLayout>
+ 
+</RelativeLayout>

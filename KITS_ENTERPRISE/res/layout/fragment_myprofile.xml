@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/elite_theme_color_background"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+ 
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shadow_gradient" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:layout_gravity="center"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+						<View
+						    android:id="@+id/myprofile_middle_line"
+						    android:layout_width="match_parent"
+						    android:layout_height="1dp"
+						    android:layout_centerInParent="true"
+						    android:layout_margin="5dp"
+						    android:background="@android:color/transparent" />
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/myprofile_middle_line"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="false"
+                            android:gravity="center" >
+
+                            <FrameLayout
+                                android:layout_width="30dp"
+                                android:layout_height="30dp" >
+
+                                <ImageView
+                                    android:id="@+id/imageView1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/myprofile_name_icon" />
+                            </FrameLayout>
+
+                            <EditText
+                                android:id="@+id/myprofile_name_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:maxEms="10"
+                                android:singleLine="true"
+                                android:text="Kason"
+                                android:textColor="@color/elite_theme_color_groupsetting_privacy_font_gray" >
+                            	<requestFocus />
+                            </EditText>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/myprofile_middle_line"
+                            android:layout_centerHorizontal="true" >
+
+                            <FrameLayout
+                                android:layout_width="30dp"
+                                android:layout_height="30dp" >
+
+                                <ImageView
+                                    android:id="@+id/imageView2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/myprofile_phone_icon" />
+                            </FrameLayout>
+
+                            <EditText
+                                android:id="@+id/myprofile_phone_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:editable="false"
+                                android:enabled="false"
+                                android:text="0912123456"
+                                android:textColor="@color/elite_theme_color_groupsetting_privacy_font_gray" >                         
+                            </EditText>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" >
+
+                    <FrameLayout
+                        android:id="@+id/frameLayout1"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:padding="1dp"
+                        android:layout_centerInParent="true" >
+
+                        <ImageView
+                            android:id="@+id/myprofile_bighead_iv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"                           
+                            android:src="@drawable/contact_head_big" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/myprofile_upload_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/frameLayout1"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/elite_theime_color_myprofile_editphoto_background"
+                        android:layout_marginTop="3dp"
+                        android:padding="1dp"
+                        android:gravity="center"
+                        android:text="@string/myprofile_edit_photo"
+                        android:textColor="@color/elite_theme_color_groupsetting_privacy_font_gray" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

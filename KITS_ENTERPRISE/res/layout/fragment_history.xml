@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/history_linearLayout"
+    android:background="@color/elite_theme_color_background"
+    android:orientation="vertical" >
+
+
+        <TextView
+            android:id="@+id/history_default_hint_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:text="@string/history_default_hint"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/elite_theme_color_blue" />
+
+        <ExpandableListView
+            android:id="@+id/elsv_history"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:childDivider="@android:color/transparent"
+            android:divider="@color/elite_theme_color_history_item_line"
+            android:dividerHeight="2dp"
+            android:groupIndicator="@android:color/transparent" >
+        </ExpandableListView>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|center_horizontal" >
+
+            <Button
+                android:id="@+id/history_fetchmore_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@color/elite_theme_color_contactinfo_bottom_transparentblue"
+                android:text="讀取更多..."
+                android:visibility="invisible"
+                android:textSize="12sp" />
+
+            <ProgressBar
+                android:id="@+id/history_fetchmore_pb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:visibility="invisible" />
+
+        </FrameLayout>
+
+</uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout>

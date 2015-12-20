@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footerview_rl"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/history_fetchmore_click_selector">
+
+    <ProgressBar
+        android:id="@+id/footerview_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/footer_fetchmore_btn"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/footer_fetchmore_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/history_fetchmore_click_selector"
+        android:textColor="@color/elite_theme_color_history_fetchmore_font_color"
+        android:text="@string/history_fetchmore_title" />
+ 
+</RelativeLayout>

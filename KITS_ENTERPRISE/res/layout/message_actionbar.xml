@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:layout_gravity="center"
+   android:orientation="horizontal"
+   android:background="@drawable/tab_header7">
+   
+    <LinearLayout
+	    android:id="@+id/message_up"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/message_actionbar_shape"
+        android:orientation="horizontal" >
+        
+        <ImageView
+	       android:layout_width="18dp"
+	       android:layout_height="20dp"
+	       android:layout_gravity="start|center"
+	       android:layout_marginLeft="3dp"
+	       android:background="@drawable/message_up" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+	       	android:layout_gravity="start|center"
+            android:text="訊息"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+        
+        <TextView
+	       	android:id="@+id/actionbar_title"
+	       	android:layout_width="wrap_content"
+	       	android:layout_height="wrap_content"
+	       	android:layout_gravity="center"
+	        android:layout_margin="5dp"
+	       	android:text="高速網路實驗室"
+	       	android:textColor="#ffffff"
+	   	   	android:textSize="19sp" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+        
+        <FrameLayout
+		android:id="@+id/message_delete"
+        android:background="@drawable/message_actionbar_shape"
+        android:layout_width="36dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end" >
+        
+	        <ImageView
+		       android:layout_width="18dp"
+		       android:layout_height="20dp"
+		       android:layout_gravity="center|center"
+		       android:background="@drawable/message_delete" />
+	        
+        </FrameLayout>
+        
+        
+    </LinearLayout>
+	
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="contact_phone">電話號碼：</string>
+    <string name="contact_belong_unit">群組：</string>
+    <string name="contact_unit_type">群組類型：</string>
+    <string name="contact_group_point">點數：</string>
+    <string name="contact_privacy_private">未公開</string>
+    <string name="contact_privacy_private2">不公開</string>
+    <string name="contact_privacy_public">公開</string>
+    <string name="contact_quit_group">退出群組</string>
+    <string name="contact_privacy_hide">隱藏</string>
+    <string name="contact_group_setting_title">群組設定</string>
+    <string name="contact_group_quit_title">您要退出嗎？</string>
+    <string name="contact_group_quit_message">若您退出群組，群組成員將無法與您聯繫。\n 如需再次加入，請通知群首，謝謝。</string>
+    <string name="contact_group_quit_yes">確定</string>
+    <string name="contact_group_quit_no">取消</string>
+    <string name="contact_setting_complete">完成</string>
+    
+</resources>

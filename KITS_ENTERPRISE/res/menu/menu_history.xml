@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto" >>
+    
+     <item 
+        android:id="@+id/menu_history_delete" 
+        android:title="@string/menu_delete" 
+        yourapp:showAsAction="always" 
+        android:icon="@drawable/history_delete"></item>
+  <!--  <item 
+        android:id="@+id/menu_history_refresh" 
+        android:title="@string/menu_refresh" 
+        yourapp:showAsAction="always" 
+        android:icon="@drawable/ic_menu_refresh"></item>-->  
+    
+   
+    
+
+</menu>

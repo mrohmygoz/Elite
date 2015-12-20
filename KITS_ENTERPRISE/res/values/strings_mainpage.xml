@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mainpage_favorite">常用電話</string>
+    <string name="mainpage_history">通話紀錄</string>
+    <string name="mainpage_contact">聯絡簿</string>
+    <string name="mainpage_systeminfo">系統通知</string>
+    <string name="mainpage_textmessage">文字訊息</string>
+    <string-array name="mainpage_tab_name_array">
+        <item >常用電話</item>
+        <item >通話紀錄</item>
+        <item >聯絡簿</item>
+        <item >文字訊息</item>
+    </string-array>
+    <string name="mainpage_loading_title">讀取資料中...請稍候</string>
+    
+</resources>

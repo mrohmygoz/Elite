@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="nthu_theme_color_colorPrimaryDark">#B1E6F6</color>
+	<color name="nthu_theme_color_colorPrimary">#BCE7FF</color>
+    <color name="nthu_theme_color_font">#000000</color>
+    <color name="nthu_theme_color_background">#b2ebf2</color>
+    <color name="nthu_theme_color_dark">#00bcd4</color>
+    <color name="nthu_theme_color_light">#fff9c4</color>
+    <color name="nthu_theme_color_group">#e0e0e0</color>
+    <color name="nthu_theme_color_font_light">#e0e0e0</color>
+    
+    
+    <color name ="elite_theme_color_background_draweritem">#0097cf</color>
+    <color name ="elite_theme_color_background_light">#BBEEFF</color>
+    <color name ="elite_theme_color_button_transparentblue">#a00099d9</color>
+    <color name ="elite_theme_color_textview_name">#a000b8d3</color>
+    <color name ="elite_theme_color_textview_phone">#a031d14d</color>
+    <color name ="elite_theme_color_font_white">#ffffffff</color>
+    <color name ="elite_theme_color_font_dark">#757575</color>
+    <color name ="elite_theme_color_red">#e51c23</color>
+    <color name ="elite_theme_color_blue">#00A1FF</color>
+    <color name ="elite_theme_color_halftransparent">#c0ffffff</color>
+  	<color name ="elite_theme_color_closetransparent">#50ffffff</color>
+  	<color name ="elite_theme_color_light_gray">#BDBDBD</color>
+  	
+  	<color name="elite_theme_color_contactinfo_header">#BCE7FF</color>
+  	<color name="elite_theme_color_contactinfo_transparentblue">#303479E3</color>
+  	<color name="elite_theme_color_contactinfo_bottom_transparentblue">#d9B3E3F3</color>
+  	
+  	<color name="elite_theme_color_contactinfo_header_glory">#FFE650</color>
+  	<color name="elite_theme_color_contactinfo_transparentblue_glory">#30F15753</color>
+  	<color name="elite_theme_color_contactinfo_bottom_transparentblue_glory">#d9FFE650</color>
+  	
+    <color name ="elite_theme_color_line">#CDE7ED</color>
+    <color name="elite_theme_color_background">#F0FFFF</color>
+    <color name="elite_theme_color_background_dark">#00A1FF</color>
+    <color name="elite_theme_color_button_click">#90ffffff</color>
+    <color name="elite_theme_color_button_orange">#FFB100</color>
+    
+    <color name ="elite_theme_color_favorite_item_background">#BBEEFF</color>
+    <color name ="elite_theme_color_favorite_item_bottom_background">#00A1FF</color>
+    <color name ="elite_theme_color_favorite_item_background_glory">#FFE650</color>
+    <color name ="elite_theme_color_favorite_item_bottom_background_glory">#F15753</color>
+    
+    <color name ="elite_theme_color_message_item_background">#D1E9E9</color>
+    <color name ="elite_theme_color_message_group_name">#4F9D9D</color>
+    <color name ="elite_theme_color_message_last_said">#6C6C6C</color>
+    <color name ="elite_theme_color_message_time">#5CADAD</color>
+    <color name ="elite_theme_color_message_send">#5CADAD</color>
+    <color name ="elite_theme_color_message_text">#E0E0E0</color>
+    <color name ="elite_theme_color_message_edittext">#F0F0F0</color>
+    <color name ="elite_theme_color_message_date">#60336666</color>
+    
+    <color name ="elite_theme_color_history_item_background">#F0FFFF</color>
+    <color name ="elite_theme_color_history_item_line">#00C2EB</color>
+    <color name ="elite_theme_color_history_item_name_font">#00A1FF</color>
+    <color name ="elite_theme_color_history_item_click_background">#82E6FF</color>
+    <color name ="elite_theme_color_history_item_click_header_color">#FF415B</color>
+    <color name ="elite_theme_color_history_item_click_detail_color">#FF7B91</color>
+    <color name ="elite_theme_color_history_item_icon_surrounding_glory">#FFE650</color>
+    <color name ="elite_theme_color_history_item_icon_surrounding_glory_click">#FBC02D</color>
+    <color name ="elite_theme_color_history_item_icon_surrounding">#82E6FF</color>
+    <color name ="elite_theme_color_history_item_icon_surrounding_click">#2196F3</color>
+    <color name ="elite_theme_color_history_fetchmore_font_color">#00A1FF</color>
+    <color name ="elite_theme_color_history_fetchmore_background">#90BBEEFF</color>
+    
+    <color name ="elite_theme_color_contact_item_background">#82E6FF</color>
+ 	<color name ="elite_theme_color_contact_item_font">#3479E3</color>
+ 	<color name ="elite_theme_color_contact_item_detail_font">#00A1FF</color>
+ 	<color name ="elite_theme_color_contact_item_background_glory">#FFE650</color>
+ 	<color name ="elite_theme_color_contact_item_point_background_glory">#FFC000</color>
+ 	<color name ="elite_theme_color_contact_item_line">#CDE7ED</color>
+ 	<color name ="elite_theme_color_contact_item_member_new">#F44336</color>
+ 	
+ 	<color name ="elite_theme_color_contact_group_item_members_new">#F44336</color>
+ 	<color name ="elite_theme_color_contact_group_item_members">#9E9E9E</color>
+ 	
+ 	<color name ="elite_theme_color_systeminfo_font">#00A1FF</color>
+ 	<color name ="elite_theme_color_systeminfo_font_gray">#757575</color>
+ 	<color name ="elite_theme_color_systeminfo_title_font">#0097cf</color>
+ 	
+ 	<color name ="elite_theme_color_systemsetting_font">#00A1FF</color>
+ 	<color name ="elite_theme_color_systemsetting_content_font">#757575</color>
+ 	<color name ="elite_theme_color_systemsetting_title_font">#0097cf</color>
+ 	
+ 	<color name ="elite_theme_color_groupsetting_privacy_font_gray">#757575</color>
+ 	<color name ="elite_theme_color_call_toast_background">#a082E6FF</color>
+ 	
+ 	<color name ="elite_theime_color_myprofile_editphoto_background">#509E9E9E</color>
+ 	
+ 	<color name ="elite_theme_color_incomingcall_title_background">#BCE7FF</color>
+ 	<color name ="elite_theme_color_incomingcall_message_background">#00A1FF</color>
+ 	<color name ="elite_theme_color_incomingcall_font_color">#3479E3</color>
+ 	<color name ="elite_theme_color_incomingcall_test_color">#50FFFFFF</color>
+ 	
+ 	
+        
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="message_delete_all_title">是否刪除全部訊息?</string>
+    <string name="message_delete_yes">確定</string>
+    <string name="message_delete_no">取消</string>
+    <string name="message_send_failed">訊息傳送失敗</string>
+    <string name="message_resend">重傳</string>
+    <string name="message_delete">刪除</string>
+    <string name="message_picture">上傳照片</string>
+    <string name="message_video">上傳影片</string>
+    <string name="message_camera">拍照</string>
+    <string name="message_film">錄影</string>
+</resources>

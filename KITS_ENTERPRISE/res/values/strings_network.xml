@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="network_invalid">網路訊號不佳，請檢查網路狀態</string>
+    <string name="incorrect_token">登入資訊過期，請重新登入。</string>
+    <string name="internal_error">伺服器發生錯誤，請稍候再嘗試</string>
+    <string name="response_params_error">參數傳送錯誤，請檢查</string>
+    <string name="response_token_incorrect">登入資訊過期，請重新登入</string>
+    <string name="response_illigal_apikey">不合法的API Key</string>
+    <string name="response_account_duplicate">此帳號已被註冊</string>
+    <string name="response_internal_error">網路訊號不佳，請稍後再試</string>
+    <string name="response_point_not_enough">通話額度已用盡</string>
+    <string name="response_no_user">找不到帳號</string>
+    <string name="response_not_validate">尚未通過認證，請輸入驗證碼</string>
+    <string name="response_device_change">帳號已轉移至別的裝置，請重新登入</string>
+    <string name="response_sip_error">網路電話伺服器出現錯誤，請聯絡客服</string>
+    <string name="response_validation_incorrect">驗證碼錯誤，請重新輸入</string>
+    <string name="response_history_notfound">找不到歷史紀錄，請試著更新通話紀錄。</string>
+    <string name="response_not_mvpn">此聯絡人尚未加入MVPN群組，無法撥打免費電話。</string>
+    <string name="response_incorrect_numberformat">電話格式錯誤。請試著更新聯絡簿。</string>
+    <string name="response_connect_error">網路訊號不佳，請稍後再試。(-1)</string>
+
+    <string name="message_update_failed">訊息更新失敗，請檢查網路狀態</string>
+</resources>

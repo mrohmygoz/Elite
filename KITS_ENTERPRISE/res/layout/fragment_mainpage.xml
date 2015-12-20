@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"  
+    android:background="@drawable/main_background" 
+    android:orientation="vertical" >
+    
+		
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp" 
+            android:layout_weight="3"
+            android:layout_gravity="center"
+           
+           
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" >
+
+				<View
+				    android:id="@+id/temp"
+				    android:layout_width="0dp"
+				    android:layout_height="0dp"
+				    android:background="@android:color/transparent"
+				    android:layout_centerInParent="true" >
+				</View>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:layout_above="@+id/temp2"
+                    android:layout_centerInParent="false"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/temp"
+                    android:background="@drawable/mainpage_name_shape"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:gravity="left"
+                        android:src="@drawable/img_home" />
+
+                    <TextView
+                        android:id="@+id/tv_mainpage_name"
+                        android:layout_width="120dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="left|center"
+                        android:singleLine="true"
+                        android:text="Andy"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/elite_theme_color_font_white" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/temp2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:layout_toRightOf="@+id/temp" >
+
+				</View>
+				
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:layout_alignLeft="@+id/linearLayout1"
+                    android:layout_below="@+id/linearLayout1"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/mainpage_phone_shape"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:gravity="left"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_main_mobile" />
+
+                    <TextView
+                        android:id="@+id/tv_mainpage_phone"
+                        android:layout_width="120dp"
+                        android:layout_height="20dp"
+                        android:layout_marginBottom="14dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="left|center"
+                        android:singleLine="true"
+                        android:text="0912123456"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/elite_theme_color_font_white" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/frame_image_layout"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentBottom="false"
+                    android:layout_alignParentLeft="false"
+                    android:layout_centerHorizontal="false"
+                    android:layout_centerInParent="false"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/temp" >
+
+                    <ImageView
+                        android:id="@+id/iv_mainpage_bighead"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/contact_image_circle_shape"
+                        android:padding="3dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/contact_head_big" />
+                </FrameLayout>
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp" 
+                android:layout_weight="1">
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lv_tab1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:background="@color/elite_theme_color_closetransparent"
+                >
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:padding="1dp"
+                    android:background="@drawable/mainpage_tab_white_shape"
+                    android:layout_weight="1"
+                     >
+
+                    <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitXY"
+                    android:src="@color/elite_theme_color_button_transparentblue"/>
+
+                        <Button
+                            android:id="@+id/btn_mainpage_favorite"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/mainpage_button_click_selector"
+                            android:text="@string/mainpage_favorite"
+                            android:textColor="@color/elite_theme_color_font_white" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:padding="1dp"
+                    android:background="@drawable/mainpage_tab_white_shape"
+                    android:layout_weight="1" >
+
+
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:scaleType="fitXY"
+                            android:src="@color/elite_theme_color_button_transparentblue" />
+                        
+                        
+                        <Button
+                            android:id="@+id/btn_mainpage_history"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/mainpage_button_click_selector"
+                            android:text="@string/mainpage_history"
+                            android:textColor="@color/elite_theme_color_font_white" />
+                   
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lv_tab2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:background="@color/elite_theme_color_closetransparent"
+                >
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:padding="1dp"
+                    android:background="@drawable/mainpage_tab_white_shape"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitXY"
+                    android:src="@color/elite_theme_color_button_transparentblue"/>
+
+                        <Button
+                            android:id="@+id/btn_mainpage_contact"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/mainpage_button_click_selector"
+                            android:text="@string/mainpage_contact"
+                            android:textColor="@color/elite_theme_color_font_white" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:padding="1dp"
+                    android:background="@drawable/mainpage_tab_white_shape"
+                    android:layout_weight="1">
+				<ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitXY"
+                    android:src="@color/elite_theme_color_button_transparentblue"/>
+
+                        <Button
+                            android:id="@+id/btn_mainpage_textmessage"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/mainpage_button_click_selector"
+                            android:text="@string/mainpage_textmessage"
+                            android:textColor="@color/elite_theme_color_font_white" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>
+

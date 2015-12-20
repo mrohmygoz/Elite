@@ -1,0 +1,106 @@
+diff a/KITS_ENTERPRISE/src/com/uninum/elite/ui/Activity_Communication.java b/KITS_ENTERPRISE/src/com/uninum/elite/ui/Activity_Communication.java	(rejected hunks)
+@@ -47,17 +47,15 @@
+ 	private LinearLayout mLlvDrawerContent;
+ 	private ListView mLsvDrawerMenu;
+ 	private MainDrawerAdapter drawerAdapter;
+-	
++
++
+ 	public static final String TAB_SELECT = "TAB_SELECT";
+ 	public static final String TAB_FAVORITE = "TAB_FAVORITE";
+ 	public static final String TAB_HISTORY = "TAB_HISTORY";
+ 	public static final String TAB_CONTACT = "TAB_CONTACT";
+-	public static final String TAB_MESSAGE = "TAB_MESSAGE";
+ 	public static final int TAB_FAVORITE_POSITION = 0;
+ 	public static final int TAB_HISTORY_POSITION = 1;
+ 	public static final int TAB_CONTACT_POSITION = 2;
+-	public static final int TAB_MESSAGE_POSITION = 3;
+-	
+ 	//for recording menu position
+ 	private int mCurrentMenuItemPosition = -1;
+ 
+@@ -107,18 +105,16 @@
+ 		//select commnuication tab
+ 		Bundle bundle = new Bundle();
+ 		bundle = getIntent().getExtras();
+-		String tab_select = bundle.getString(TAB_SELECT);
+ 		if(bundle!=null){
++			String tab_select = bundle.getString(TAB_SELECT);
+ 			if(tab_select.equals(TAB_FAVORITE))
+ 				viewPager.setCurrentItem(TAB_FAVORITE_POSITION);
+ 			else if(tab_select.equals(TAB_HISTORY))
+ 				viewPager.setCurrentItem(TAB_HISTORY_POSITION);
+ 			else if(tab_select.equals(TAB_CONTACT))
+ 				viewPager.setCurrentItem(TAB_CONTACT_POSITION);
+-			else if(tab_select.equals(TAB_MESSAGE))
+-				viewPager.setCurrentItem(TAB_MESSAGE_POSITION);
+-		}
+-		
++		}else
++			viewPager.setCurrentItem(TAB_HISTORY_POSITION);
+ 	}
+ 	
+ 	public class PagerAdapter extends FragmentStatePagerAdapter implements OnPageChangeListener{
+@@ -150,11 +146,6 @@
+ 				Bundle args3 = new Bundle();
+ 				ContactFragment.setArguments(args3);
+ 				return ContactFragment;
+-			case 3:
+-				Fragment MessageFragment = new TabMessage();
+-				Bundle args4 = new Bundle();
+-				MessageFragment.setArguments(args4);
+-				return MessageFragment;
+ 			}
+ 			return null;
+ 			
+@@ -297,7 +288,6 @@
+ 		itemList.add(new MainDrawerItem(menu_items[0], R.drawable.ic_main_home));
+ 		itemList.add(new MainDrawerItem(menu_items[1], R.drawable.ic_main_edit));
+ 		itemList.add(new MainDrawerItem(menu_items[2], R.drawable.ic_main_info));
+-		itemList.add(new MainDrawerItem(menu_items[3], R.drawable.ic_main_info));
+ 
+ 		drawerAdapter = new MainDrawerAdapter(this, R.layout.drawer_menu_item, itemList);
+ 		mLsvDrawerMenu.setAdapter(drawerAdapter);
+@@ -315,33 +305,16 @@
+ 		switch(position){
+ 		case Activity_Main.MAIN_MENU:
+ 			bundle.putString(Activity_Main.MAIN_SELECT, Activity_Main.MAIN_SELECT_MENU);
+-			intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+-			intent.putExtras(bundle);
+-			startActivity(intent);
+ 			break;
+ 		case Activity_Main.USER_PROFILE:
+ 			bundle.putString(Activity_Main.MAIN_SELECT, Activity_Main.MAIN_SELECT_USERPROFILE);
+-			intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+-			intent.putExtras(bundle);
+-			startActivity(intent);
+ 			break;
+ 		case Activity_Main.INFORMATION_MENU:
+ 			bundle.putString(Activity_Main.MAIN_SELECT, Activity_Main.MAIN_SELECT_INFORMATION);
+-			intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+-			intent.putExtras(bundle);
+-			startActivity(intent);
+-			break;
+-		case Activity_Main.SYSTEM_INFO:
+-			Log.d("Jenny", "activity comm: position is "+position);
+-			Intent systemInfoIntent = new Intent();
+-			Log.d("Jenny", "activity comm: new intent");
+-			systemInfoIntent.setClass(Activity_Communication.this, SystemInfo.class);
+-			Log.d("Jenny", "activity comm: set class");
+-			systemInfoIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+-			Log.d("Jenny", "activity comm: set flag");
+-			startActivity(systemInfoIntent);
+-			break;
+ 		}
++		intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
++		intent.putExtras(bundle);
++		startActivity(intent);
+ 		
+ 	}
+ 	@Override
+@@ -384,5 +357,4 @@
+ 		return true;
+ 	}
+ 
+-
+ }

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <io.vov.vitamio.widget.CenterLayout
+        android:id="@+id/download_centerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" >
+
+        <io.vov.vitamio.widget.VideoView
+            android:id="@+id/download_videoPrev"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        
+    </io.vov.vitamio.widget.CenterLayout>
+
+    <ImageView
+        android:id="@+id/download_imgPrev"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:src="@drawable/totoro" />
+    
+    
+    <LinearLayout
+        android:id="@+id/download_topBanner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="top"
+        android:background="#4F4F4F"
+        android:orientation="vertical" >
+    	
+        <TextView
+		 	android:id="@+id/upload_topText"
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:layout_gravity="center"
+		    android:text="照片"
+		    android:paddingTop="10dp"
+		    android:textColor="#FFFFFF"
+		    android:textSize="16sp" />
+    
+    </LinearLayout>
+    
+    
+    
+    <LinearLayout
+        android:id="@+id/download_bottomlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#4F4F4F"
+        android:orientation="vertical" >
+    	
+	    <ProgressBar
+		    android:id="@+id/download_pb"
+		    style="?android:attr/progressBarStyleHorizontal"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:padding="3dp"
+		    android:layout_gravity="center" />
+    	
+        
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+		    android:padding="3dp"
+	        android:orientation="horizontal" >
+	    	
+            <Button
+		        android:id="@+id/download_cancel"
+		        android:layout_width="0dp"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:layout_gravity="center"
+		        android:text="取消"
+		        android:background="@drawable/upload_buttonshape"
+		        android:textColor="#FCFCFC" />
+        
+        	<Button
+		        android:id="@+id/download_button"
+		        android:layout_width="0dp"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:layout_gravity="center"
+		        android:text="儲存"
+		        android:background="@drawable/upload_buttonupload"
+		        android:textColor="#FCFCFC" />
+	    	
+        </LinearLayout>
+        
+        
+    
+     </LinearLayout>
+    
+
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="ring" >
+
+    <solid android:color="#00000000" />
+
+    <size
+        android:height="40dip"
+        android:width="40dip" />
+
+</shape><!-- From: file:/D:/Work/_Elite%20Version/VitamioBundle-3.0/VitamioBundle-3.0/res/drawable/mediacontroller_seekbar_thumb.xml -->

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto" >>
+
+<!--<item 
+        android:id="@+id/menu_main_logout" 
+        android:title="@string/main_menu_logout" 
+        yourapp:showAsAction="never" ></item>  -->
+
+<item 
+        android:id="@+id/menu_main_search" 
+        android:title="@string/main_menu_search" 
+        yourapp:showAsAction="always" 
+        android:icon="@drawable/action_search"></item>
+
+</menu>
+

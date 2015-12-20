@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/favorite_shape_ll"
+    android:layout_width="170dp"
+    android:layout_height="175dp"
+    android:background="@drawable/favorite_rectangle_shape"
+    android:orientation="vertical" >
+
+    <ImageButton
+            android:id="@+id/favorite_delete_ibtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/button_click_selector"
+            android:scaleType="centerCrop"
+            android:src="@drawable/btn_delete" />
+    
+    <ImageButton
+            android:id="@+id/favorite_glory_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="3dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/button_click_selector"
+            android:scaleType="fitXY"
+            android:visibility="invisible"
+            android:src="@drawable/img_crown" />
+
+    <RelativeLayout
+        android:id="@+id/favorite_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/favorite_rectangle_shape_bottom" >
+
+        <TextView
+            android:id="@+id/favorite_name_tv"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="left|center_vertical"
+            android:singleLine="true"
+            android:text="Andy Liu"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/elite_theme_color_font_white"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/favorite_call_ibtn"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_click_selector"
+            android:gravity="bottom|right"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_call" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/favorite_delete_ibtn"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:layout_centerHorizontal="true">
+
+        <ImageButton
+            android:id="@+id/favorite_bighead_ibtn"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:padding="3dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/contact_image_circle_shape"
+            android:src="@drawable/contact_head_big" />
+    </FrameLayout>
+
+</RelativeLayout>

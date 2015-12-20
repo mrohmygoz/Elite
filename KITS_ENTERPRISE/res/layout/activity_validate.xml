@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/bg_welcome" >
+
+        <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_apply" >      
+    </FrameLayout>
+    <Button
+        android:id="@+id/btn_validate_resend"
+        android:layout_width="246dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/lv_validate"
+        android:layout_alignTop="@+id/btn_validate_submit"
+        android:layout_marginTop="54dp"
+        android:background="@drawable/img_enter_phone"
+        android:text="@string/validate_resend"
+        android:enabled="false"
+        android:textColor="@color/elite_theme_color_font_dark" />
+
+    <TextView
+        android:id="@+id/tv_validate_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:text="@string/validate_title"
+        android:textColor="@color/elite_theme_color_blue"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_validate_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/validate_resend_title"
+        android:textColor="@color/elite_theme_color_blue"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_validate_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lv_validate"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="10dp"
+        android:text="Medium Text"
+        android:textColor="@color/elite_theme_color_blue"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/lv_validate"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_validate_number"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/img_enter_phone"
+        android:padding="5dp" >
+
+        <EditText
+            android:id="@+id/edtv_validate"
+            android:layout_width="210dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="@string/validate_hint"
+            android:inputType="phone"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/ibtn_validate_delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_click_selector"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_delet" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_validate_submit"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/lv_validate"
+        android:layout_below="@+id/lv_validate"
+        android:background="@drawable/register_button_click_selector"
+        android:text="@string/validate_submit"
+        android:textColor="@color/elite_theme_color_font_white" />
+
+</RelativeLayout>

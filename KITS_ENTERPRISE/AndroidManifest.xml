@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.uninum.elite"
+    android:versionCode="32"
+    android:versionName="2.0.3" >
+
+    
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- for normal group -->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <!-- read internal photo and write photo  -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!--  incoming call alert  -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE" /> 
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" /> 
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <!--  for gcm  
+    https://developer.android.com/google/gcm/client.html   -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+	<uses-permission android:name="com.example.gcm.permission.C2D_MESSAGE" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="android.permission.GET_TASKS" />
+
+    
+
+    <uses-feature 
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <application
+        android:name="com.uninum.elite.system.KitsApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/Theme.Elite_style"
+        android:label="@string/app_name" >
+        
+        <meta-data android:name="com.google.android.gms.version"
+           android:value="@integer/google_play_services_version" />
+        <activity
+            android:name="com.uninum.elite.ui.Welcome"     
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme_Elite_NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="io.vov.vitamio.activity.InitActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        
+        <activity
+            android:name="com.uninum.elite.ui.Register"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.uninum.elite.ui.Validate"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.uninum.elite.ui.Activity_Main"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.uninum.elite.ui.ShareFile"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+		        <action android:name="android.intent.action.SEND" />
+		        <category android:name="android.intent.category.DEFAULT" />
+		        <data android:mimeType="image/*" />
+		    </intent-filter>
+		    <intent-filter>
+		        <action android:name="android.intent.action.SEND" />
+		        <category android:name="android.intent.category.DEFAULT" />
+		        <data android:mimeType="text/plain" />
+		    </intent-filter>
+		    <intent-filter>
+		        <action android:name="android.intent.action.SEND" />
+		        <category android:name="android.intent.category.DEFAULT" />
+		        <data android:mimeType="application/*" />
+		    </intent-filter>
+		    <intent-filter>
+		        <action android:name="android.intent.action.SEND_MULTIPLE" />
+		        <category android:name="android.intent.category.DEFAULT" />
+		        <data android:mimeType="image/*" />
+	    	</intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.uninum.elite.ui.Activity_Message"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.uninum.elite.ui.Activity_Communication"
+            android:screenOrientation="portrait"
+            android:icon="@drawable/ic_launcher" >
+        </activity>
+        
+        <activity
+            android:name="com.uninum.elite.ui.SystemSetting"
+            android:screenOrientation="portrait"
+            android:icon="@drawable/ic_launcher" >
+        </activity>
+        <activity
+            android:name="com.uninum.elite.ui.SystemInfo"
+            android:screenOrientation="portrait" 
+            android:parentActivityName="com.uninum.elite.ui.Activity_Main" >
+        <!-- Parent activity meta-data to support 4.0 and lower -->
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.uninum.elite.ui.Activity_Main" />
+        </activity>
+        <activity
+            android:name="org.acra.CrashReportDialog"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        
+        <activity
+            android:name="com.uninum.elite.ui.SearchContact"
+            android:screenOrientation="portrait"
+            android:icon="@drawable/ic_launcher" >
+        </activity>
+        
+        <activity
+            android:name="com.uninum.elite.ui.UploadActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:icon="@drawable/ic_launcher" >
+        </activity>
+        
+        <activity
+            android:name="com.uninum.elite.ui.DownloadActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:icon="@drawable/ic_launcher" >
+        </activity>
+        
+        <activity
+            android:name="com.uninum.elite.ui.IncomingMessageDialog"
+            android:launchMode="singleInstance" android:excludeFromRecents="true"
+  			android:taskAffinity="" 
+  			android:theme="@style/Theme_Dialog" >
+        </activity>
+        
+        
+        
+        <receiver
+            android:name="com.uninum.elite.utility.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.example.gcm" />
+            </intent-filter>
+        </receiver>
+        
+        <service android:name="com.uninum.elite.utility.GcmIntentService" />
+        <service android:name=".utility.LoginService"></service>
+        
+        
+        <provider android:name=".system.MyContentProvider" 
+            android:authorities="com.uninum.elite.system"
+            android:exported="false">
+        </provider>
+        
+    </application>
+
+</manifest>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">elite</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="unitType_normal">一般</string>
+	<string name="unitType_glory">尊榮-家族</string>
+	<string name="unitType_glory_multi">尊榮-夥伴</string>
+	<string name="unitType_glory_uni">尊榮-商務</string>
+	<string name="menu_refresh">更新</string>
+	<string name="menu_delete">刪除</string>
+	<string name="history_outgoing">撥出</string>
+	<string name="history_incoming">來電</string>
+	<string name="history_hour">小時</string>
+	<string name="history_min">分鐘</string>
+	<string name="history_sec">秒</string>
+	<string name="call_message">請稍候，雲端代表號將會來電，請留意您的電話</string>
+	<string name="call_making_calling">雲端接線生接通  %number 中，稍後雲端接線生會來電，請放心接聽。</string>
+	<string name="upload_waiting_title">上傳中，請稍候.....</string>
+</resources>

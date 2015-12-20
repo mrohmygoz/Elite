@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item 
+        android:id="@+id/menu_message_picture" 
+        android:title="@string/message_picture" 
+        android:icon="@drawable/add_image"/>
+    
+    <item 
+        android:id="@+id/menu_message_video" 
+        android:title="@string/message_video" 
+        android:icon="@drawable/film"/>
+    
+    <item 
+        android:id="@+id/menu_message_camera" 
+        android:title="@string/message_camera" 
+        android:icon="@drawable/camera"/>
+    
+    <item 
+        android:id="@+id/menu_message_film" 
+        android:title="@string/message_film" 
+        android:icon="@drawable/take_video"/>
+    
+</menu>

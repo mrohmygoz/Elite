@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/javacv"/>
+	<classpathentry kind="lib" path="libs/httpcore-4.3.2.jar"/>
+	<classpathentry kind="lib" path="libs/acra-4.5.0.jar"/>
+	<classpathentry kind="lib" path="libs/universal-image-loader-1.9.3.jar"/>
+	<classpathentry kind="lib" path="libs/FFmpegMediaMetadataRetriever-1.0.3-sources.jar"/>
+	<classpathentry kind="lib" path="libs/javacpp.jar"/>
+	<classpathentry kind="lib" path="libs/javacv.jar"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="lib" path="D:/Work/workspace/10qdan0c/app/app/Pubnub-Android-3.7.4.jar"/>
+	<classpathentry kind="lib" path="D:/Work/_Elite Version/VitamioBundle-3.0/VitamioBundle-3.0/libs/vitamio.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

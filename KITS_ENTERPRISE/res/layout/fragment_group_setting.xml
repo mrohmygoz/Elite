@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/elite_theme_color_background_light"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:stretchColumns="2" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" 
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/contact_belong_unit" 
+                android:gravity="right"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/group_setting_groupname_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="HSNL尊榮群組"
+                android:gravity="left"
+                android:layout_span="2"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </TableRow>
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+		android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/elite_theme_color_line" />
+
+        <TableRow
+            android:id="@+id/privacy_setting_row"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/contact_phone"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/group_setting_privacy_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/contact_privacy_public"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <CheckBox
+                android:id="@+id/group_setting_privacy_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/contact_privacy_hide" />
+
+        </TableRow>
+
+        <TextView
+            android:id="@+id/group_provacy_descript_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/elite_theme_color_groupsetting_privacy_font_gray"
+            android:text=""
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+		<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+		android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/elite_theme_color_line" />
+       
+        <TableRow
+            android:id="@+id/group_point_row"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp">
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_group_point"
+                android:gravity="right"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/group_setting_point_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0"
+                android:gravity="left"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </TableRow>
+		
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp" 
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/group_setting_quit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"       
+                android:padding="5dp"         
+                android:background="@drawable/contact_group_setting_rectangle_shape_btn"
+                android:text="@string/contact_quit_group"
+                android:textColor="@color/elite_theme_color_font_white" />
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

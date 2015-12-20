@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string name="acra_crash_dialog_text">程式發生了不可預期的錯誤，即將關閉。</string>
+     <string name="acra_crash_dialog_comment_prompt">請留下錯誤發生的原因，我們將會盡快處理：</string>
+     <string name="acra_crash_toast_text">抱歉，程式發生不可預期錯誤</string>
+</resources>

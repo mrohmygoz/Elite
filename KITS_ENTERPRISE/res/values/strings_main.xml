@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="main_open_left_drawer">選單</string>
+    <string name="main_close_left_drawer">首頁</string>
+    <string name="main_menu_logout">登出</string>
+    <string name="main_menu_search">搜尋</string>
+    <string name="main_backpress">再按一次退出程式</string>
+    <string-array name="menu_items">
+        <item >首頁</item>
+        <item >編輯個人檔案</item>
+        <item >設定</item>
+        <item >系統通知</item>
+    </string-array>
+    
+</resources>

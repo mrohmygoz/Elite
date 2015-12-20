@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" >
+     <shape
+    android:shape="rectangle">
+    
+    <!--     
+    shape的類型含有:  
+    1.rectangle  長方形、矩形
+    2.oval  橢圓形、卵形
+    3.line  線
+    4.ring  環形
+    -->
+ 
+    <!-- 圓角，Layout佈局圓角幅度設定值 -->
+    <corners 
+    android:radius="0dip" 
+    />
+        
+    <!-- 框內底部顏色 -->
+    <solid 
+    android:color="@android:color/white" 
+    />
+        
+    <!-- 外框，框線粗細，框線顏色 -->
+    <stroke
+    android:width="0.0dip"
+    android:color="#228B22" 
+    />
+
+    <!-- 畫面顏色漸層，開始色碼與結束色碼進行漸層，角度為315度 -->
+    <gradient
+    android:startColor="@color/elite_theme_color_button_click"
+    android:endColor="@color/elite_theme_color_button_click"
+    android:angle="315"
+    />
+        
+    <!-- padding內縮距離 -->
+    <padding
+    android:left="5dip"
+    android:right="5dip"
+    android:top="5dip"
+    android:bottom="5dip"
+    />
+        
+    <!-- 尺寸大小 -->
+    <size
+        android:height="60dip"
+    />
+   
+</shape>
+</item>
+<item>
+    <shape
+    android:shape="rectangle">
+    
+    <!--     
+    shape的類型含有:  
+    1.rectangle  長方形、矩形
+    2.oval  橢圓形、卵形
+    3.line  線
+    4.ring  環形
+    -->
+ 
+    <!-- 圓角，Layout佈局圓角幅度設定值 -->
+    <corners 
+    android:radius="0dip" 
+    />
+        
+    <!-- 框內底部顏色 -->
+    <solid 
+    android:color="@android:color/white" 
+    />
+        
+    <!-- 外框，框線粗細，框線顏色 -->
+    <stroke
+    android:width="1.0dip"
+    android:color="@android:color/white" 
+    />
+
+    <!-- 畫面顏色漸層，開始色碼與結束色碼進行漸層，角度為315度 -->
+    <gradient
+    android:startColor="@color/elite_theme_color_contact_item_background_glory"
+    android:endColor="@color/elite_theme_color_contact_item_background_glory"
+    android:angle="315"
+    />
+        
+    <!-- padding內縮距離 -->
+    <padding
+    android:left="5dip"
+    android:right="5dip"
+    android:top="5dip"
+    android:bottom="5dip"
+    />
+        
+    <!-- 尺寸大小 -->
+    <size
+        android:height="60dip"
+    />
+   
+</shape>
+</item>
+</selector>

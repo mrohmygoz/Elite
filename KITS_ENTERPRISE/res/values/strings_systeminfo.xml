@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="systeminfo_title">系統更新通知</string>
+    <string name="systeminfo_context_title">執行</string>
+    <string name="systeminfo_context_delete">刪除</string>
+    <string name="systeminfo_menu_delete_all">是否刪除全部系統更新通知?</string>
+    <string name="systeminfo_menu_delete_yes">確定</string>
+    <string name="systeminfo_menu_delete_no">取消</string>
+    
+</resources>

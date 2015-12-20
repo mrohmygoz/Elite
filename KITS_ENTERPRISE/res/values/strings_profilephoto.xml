@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="myprofile_ignore">略過</string>
+    <string name="myprofile_finish">完成</string>
+    <string name="myprofile_gallery">手機上傳</string>
+    <string name="myprofile_camera">拍照</string>
+    <string name="myprofile_wait">正在上傳頭像</string>
+    <string name="myprofile_error">Opps!上傳失敗</string>
+    <string name="myprofile_message">歡迎您的加入。\n請先上傳您的一張個人頭像。</string>
+    
+</resources>

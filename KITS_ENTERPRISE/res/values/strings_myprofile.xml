@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="myprofile_complete">完成</string>
+    <string name="myprofile_save">儲存</string>
+    <string name="myprofile_title">上傳圖片</string>
+    <string name="myprofile_takepicture">拍照</string>
+    <string name="myprofile_gallery">手機上傳</string>
+    <string name="myprofile_edit_photo">編輯個人照片</string>
+    
+</resources>

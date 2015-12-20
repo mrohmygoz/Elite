@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item>
+    <shape
+    android:shape="oval">
+    
+    <!--     
+    shape的類型含有:  
+    1.rectangle  長方形、矩形
+    2.oval  橢圓形、卵形
+    3.line  線
+    4.ring  環形
+    -->
+ 
+    <!-- 圓角，Layout佈局圓角幅度設定值 -->
+    <corners 
+    android:radius="15dip" 
+    />
+        
+    <!-- 框內底部顏色 -->
+    <solid 
+    />
+        
+    <!-- 外框，框線粗細，框線顏色 -->
+    <stroke
+    android:width="6.0dip"
+    android:color="@color/elite_theme_color_history_item_icon_surrounding" 
+    />
+
+    <!-- 畫面顏色漸層，開始色碼與結束色碼進行漸層，角度為315度 -->
+    <gradient
+    android:startColor="@android:color/white"
+    android:endColor="@android:color/white"
+    android:angle="315"
+    />
+        
+    <!-- padding內縮距離 -->
+    <padding
+
+    />
+        
+    <!-- 尺寸大小 -->
+    <size
+    />
+   
+</shape>
+</item>
+
+    <item android:state_pressed="true" >
+      <shape
+    android:shape="oval">
+    
+    <!--     
+    shape的類型含有:  
+    1.rectangle  長方形、矩形
+    2.oval  橢圓形、卵形
+    3.line  線
+    4.ring  環形
+    -->
+ 
+    <!-- 圓角，Layout佈局圓角幅度設定值 -->
+    <corners 
+    android:radius="15dip" 
+    />
+        
+    <!-- 框內底部顏色 -->
+    <solid 
+    />
+        
+    <!-- 外框，框線粗細，框線顏色 -->
+    <stroke
+    android:width="2.0dip"
+    android:color="@color/elite_theme_color_history_item_icon_surrounding_click" 
+    />
+
+    <!-- 畫面顏色漸層，開始色碼與結束色碼進行漸層，角度為315度 -->
+    <gradient
+    android:startColor="@android:color/white"
+    android:endColor="@android:color/white"
+    android:angle="315"
+    />
+        
+    <!-- padding內縮距離 -->
+    <padding
+
+    />
+        
+    <!-- 尺寸大小 -->
+    <size
+    />
+   
+</shape>
+</item>
+
+</selector>

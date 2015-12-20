@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="call_waiting">雲端服務中心即將來電，請放心接聽。</string>
+        <string name="call_no_response_title">很抱歉</string>
+    <string name="call_no_response">伺服器忙線中請稍後再撥</string>
+</resources>

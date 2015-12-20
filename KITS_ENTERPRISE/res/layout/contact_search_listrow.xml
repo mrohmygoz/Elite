@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="@drawable/button_click_selector"
+    android:id="@+id/contact_search_contact_layout"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+	    <TableRow
+	        android:id="@+id/tableRow1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" >
+
+	        <ImageView
+	            android:id="@+id/contact_search_icon_niv"
+	            android:layout_width="60dp"
+	            android:layout_height="60dp"
+	            android:scaleType="fitXY"
+	            android:padding="3dp"
+	      		android:layout_marginLeft="5dp"
+	            android:background="@drawable/contact_image_circle_shape"
+	            android:src="@drawable/contact_head_big" />
+
+	        <RelativeLayout
+	            android:layout_width="100dp"
+	            android:layout_height="match_parent"  >
+	            
+	            <TextView
+	                android:id="@+id/contact_search_group_tv"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignBottom="@+id/contact_search_name_tv"
+	                android:layout_alignLeft="@+id/contact_search_name_tv"
+	                android:layout_centerHorizontal="false"
+	                android:text="HSNL"
+	                android:singleLine="true"
+	                android:textColor="@color/elite_theme_color_groupsetting_privacy_font_gray"
+	                android:textSize="12sp" />
+
+	            <TextView
+	                android:id="@+id/contact_search_name_tv"
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentTop="true"
+	                android:layout_marginLeft="10dp"
+	                android:gravity="center_vertical"
+	                android:text="abc"
+	                android:textColor="@color/elite_theme_color_blue"
+	                android:textSize="14sp"
+	                android:singleLine="true"
+	                android:textStyle="normal" />
+	            
+	        </RelativeLayout>
+
+
+
+	        
+	
+	    </TableRow>
+
+        <ImageButton
+            android:id="@+id/contact_search_favorite_ibtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_click_selector"
+            android:src="@drawable/btn_important" />
+
+        <TextView
+            android:id="@+id/contact_search_mvpn_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            android:layout_toLeftOf="@+id/contact_search_favorite_ibtn"
+            android:text="免費"
+            android:textColor="@color/elite_theme_color_blue"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    
+
+    <LinearLayout
+        android:id="@+id/contact_search_detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+ 	</LinearLayout>
+ 	
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/elite_theme_color_contact_item_line" />
+
+</LinearLayout> 

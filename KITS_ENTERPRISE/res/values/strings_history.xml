@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="history_default_hint">您目前尚未有通話紀錄</string>
+    <string name="history_delete_all_title">是否刪除全部通話紀錄?</string>
+    <string name="history_delete_yes">確定</string>
+    <string name="history_delete_no">取消</string>
+    <string name="history_fetchmore_title">讀取更多...</string>
+    <string name="history_fetchmore_noelse">已取得全部通話紀錄</string>
+</resources>

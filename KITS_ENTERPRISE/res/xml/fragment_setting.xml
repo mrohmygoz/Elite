@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="@string/setting_info_title">
+        <Preference android:title="@string/setting_info_account" android:key="USER_ACCOUNT"/>
+        <Preference android:title="@string/setting_info_version" android:key="APP_VERSION"/>
+        <PreferenceScreen android:title="@string/setting_info_about" android:key="APP_ABOUNT"></PreferenceScreen>
+    </PreferenceCategory>
+    
+
+</PreferenceScreen>

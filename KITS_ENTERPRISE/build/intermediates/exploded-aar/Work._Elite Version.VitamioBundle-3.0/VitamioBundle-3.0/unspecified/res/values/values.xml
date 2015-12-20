@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/Work/_Elite%20Version/VitamioBundle-3.0/VitamioBundle-3.0/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="mediacontroller_play_pause">Play/Pause</string>
+    <string name="vitamio_init_decoders">Initializing decoders…</string>
+    <string name="vitamio_name">Vitamio</string>
+    <string name="vitamio_videoview_error_button">OK</string>
+    <string name="vitamio_videoview_error_text_invalid_progressive_playback">Sorry, this video is not valid for streaming to
+		this device.</string>
+    <string name="vitamio_videoview_error_text_unknown">Sorry, this video cannot be played.</string>
+    <string name="vitamio_videoview_error_title">Cannot play video</string>
+    <!-- From: file:/D:/Work/_Elite%20Version/VitamioBundle-3.0/VitamioBundle-3.0/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="MediaController_SeekBar">
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+        <item name="android:progressDrawable">@drawable/mediacontroller_seekbar</item>
+        <item name="android:thumb">@drawable/mediacontroller_seekbar_thumb</item>
+    </style>
+    <style name="MediaController_Text">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

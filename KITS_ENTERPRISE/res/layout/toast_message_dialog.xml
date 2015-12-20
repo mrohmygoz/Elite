@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/ll_toast_message"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/toast__message_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="230dp"
+        android:background="@color/elite_theme_color_call_toast_background"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="雲端服務中心即將來電，請放心接聽。"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:typeface="serif" />
+	
+</LinearLayout>

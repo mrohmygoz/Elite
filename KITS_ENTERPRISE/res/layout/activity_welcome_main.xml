@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/elite_theme_color_background_dark"
+    android:id="@+id/welcome_screen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/btn_welcome_register"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_click_selector"
+            android:text="@string/welcome_register_title"
+            android:textColor="@color/elite_theme_color_font_white"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/view_welcome_register"
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/btn_welcome_register"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/white"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="164dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo" />
+    </RelativeLayout>
+
+</LinearLayout>

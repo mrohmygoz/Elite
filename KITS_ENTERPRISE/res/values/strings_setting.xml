@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="setting_info_title">資訊</string>
+    <string name="setting_info_account">帳號</string>
+    <string name="setting_info_version">版本</string>
+    <string name="setting_info_about">關於</string>
+    <string name="setting_back">返回</string>
+    <string name="setting_info_about_message">elite 是一個新型態通訊錄應用程式，享有三大特點 \n1.群組通訊: 與雲端同步群組通訊錄，自動又方便。 \n2.安全隱私: 電話號碼自動隱藏，個人隱私有保障。 \n3.尊榮服務: 雲端撥接方式，享受尊榮級電話服務。 \n </string>
+ 	<string name="setting_info_dialog_finish">確定</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="groupsetting_privacy_hint_private">您可公開您的電話號碼給群組組員。預設為不公開。</string>
+    <string name="groupsetting_privacy_hint_public">對群組組員公開您的電話號碼</string>
+    
+</resources>

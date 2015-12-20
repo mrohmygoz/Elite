@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+     <LinearLayout
+    	 xmlns:android="http://schemas.android.com/apk/res/android"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_margin="0dp"
+         android:orientation="vertical" >
+         
+         <uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout
+            android:id="@+id/ptr_layout"
+         	android:background="@drawable/message_dialog_shape"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="11" >
+         
+	        <ListView
+	            android:id="@+id/dialog_list"
+	         	android:background="@drawable/message_dialog_shape"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:divider="@color/elite_theme_color_message_item_background"
+	            android:listSelector="@color/elite_theme_color_message_item_background" >
+	        </ListView>
+        
+        </uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/text_field"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:background="@color/elite_theme_color_message_text"
+            android:layout_weight="1" >
+            
+            <Button
+                android:id="@+id/add_file"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="9dp"
+                android:background="@drawable/addfile2" />
+
+            <EditText
+                android:id="@+id/text_field_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:layout_margin="6dp"
+                android:padding="2dp"
+                android:background="@color/elite_theme_color_message_edittext"
+                android:ems="10" >
+            </EditText>
+
+            <Button
+                android:id="@+id/text_field_send"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/button_message_send_shape"
+                android:text="傳送" 
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+         
+     </LinearLayout>
